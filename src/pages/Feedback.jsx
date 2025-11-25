@@ -46,7 +46,6 @@ const Feedback = () => {
     <div>
       <h1 style={{textAlign:'center'}}>Зворотній зв'язок</h1>
       <form className="feedback-form" onSubmit={handleSubmit}>
-        {/* Група 1: Персональна інформація [cite: 269] */}
         <fieldset className="fieldset-group">
           <legend className="legend-title">Персональна інформація</legend>
           
@@ -96,7 +95,6 @@ const Feedback = () => {
           </select>
         </div>
 
-        {/* Лаб 4: Тултіп при наведенні */}
         <div className="form-group detail-group" style={{position: 'relative'}}>
           <label>Детально:</label>
           <textarea name="details" className="form-control" rows="5" value={formData.details} onChange={handleChange}></textarea>

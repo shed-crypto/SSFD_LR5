@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 
-// Імпортуємо зображення з папки assets
 import smarthomeImg from '../assets/smarthome.png';
 import ecofarmImg from '../assets/ecofarm.png';
 import eduquestImg from '../assets/eduquest.png';
@@ -11,7 +10,7 @@ const projectsData = [
     id: 1, 
     title: "SmartHome AI", 
     country: "Україна", 
-    img: smarthomeImg, // Використовуємо змінну імпорту
+    img: smarthomeImg,
     features: ["IoT", "Voice Control", "Energy Saving"] 
   },
   { 
@@ -30,7 +29,7 @@ const projectsData = [
   },
   { 
     id: 4, 
-    title: "MediBot Assistant", // Змінив назву під картинку medibot
+    title: "MediBot Assistant",
     country: "Німеччина", 
     img: medibotImg, 
     features: ["AI Diagnosis", "24/7 Support", "Health Tracking"] 
@@ -46,8 +45,6 @@ const Projects = () => {
   return (
     <div>
       <h1 style={{textAlign: 'center', marginBottom:'20px'}}>ПРОЄКТИ TECH START-UP</h1>
-      
-      {/* Карусель */}
       <div className="carousel-wrapper">
         <div className="carousel-container">
           <img src={projectsData[slideIndex].img} alt="Project" className="carousel-image" />
@@ -57,7 +54,6 @@ const Projects = () => {
         </div>
       </div>
 
-      {/* Сітка проєктів */}
       <div className="projects-grid">
         {projectsData.map(p => (
           <article key={p.id} className="project-card">

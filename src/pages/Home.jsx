@@ -8,7 +8,6 @@ const Home = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [currentFounder, setCurrentFounder] = useState('');
 
-  // Ефект самодрукування (Лаб 4)
   useEffect(() => {
     let i = 0;
     const timer = setInterval(() => {

@@ -8,7 +8,6 @@ import Feedback from './pages/Feedback';
 import './index.css';
 
 function App() {
-  // Лаб 4: Темна тема за часом (21:00 - 06:00)
   useEffect(() => {
     const checkTime = () => {
       const hours = new Date().getHours();
@@ -19,7 +18,7 @@ function App() {
       }
     };
     checkTime();
-    const interval = setInterval(checkTime, 60000); // Перевірка щохвилини
+    const interval = setInterval(checkTime, 60000);
     return () => clearInterval(interval);
   }, []);
 
